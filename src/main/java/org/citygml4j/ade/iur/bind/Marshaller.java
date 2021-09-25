@@ -62,13 +62,13 @@ public class Marshaller implements ADEMarshaller {
     public JAXBElement<?> marshalJAXBElement(ADEModelObject src) {
         String packageName = src.getClass().getPackage().getName();
 
-        if (UrbanFunctionModule.v1_4.getModelPackageName().equals(packageName))
+        if (UrbanFunctionModule.v1_5.getModelPackageName().equals(packageName))
             return urbanFunction.marshalJAXBElement(src);
-        else if (StatisticalGridModule.v1_4.getModelPackageName().equals(packageName))
+        else if (StatisticalGridModule.v1_5.getModelPackageName().equals(packageName))
             return statisticalGrid.marshalJAXBElement(src);
-        else if (UrbanObjectModule.v1_4.getModelPackageName().equals(packageName))
+        else if (UrbanObjectModule.v1_5.getModelPackageName().equals(packageName))
             return urbanObject.marshalJAXBElement(src);
-        else if (PublicTransitModule.v1_4.getModelPackageName().equals(packageName))
+        else if (PublicTransitModule.v1_5.getModelPackageName().equals(packageName))
             return publicTransit.marshalJAXBElement(src);
 
         return null;
@@ -78,13 +78,13 @@ public class Marshaller implements ADEMarshaller {
     public Object marshal(ADEModelObject src) {
         String packageName = src.getClass().getPackage().getName();
 
-        if (UrbanFunctionModule.v1_4.getModelPackageName().equals(packageName))
+        if (UrbanFunctionModule.v1_5.getModelPackageName().equals(packageName))
             return urbanFunction.marshal(src);
-        else if (StatisticalGridModule.v1_4.getModelPackageName().equals(packageName))
+        else if (StatisticalGridModule.v1_5.getModelPackageName().equals(packageName))
             return statisticalGrid.marshal(src);
-        else if (UrbanObjectModule.v1_4.getModelPackageName().equals(packageName))
+        else if (UrbanObjectModule.v1_5.getModelPackageName().equals(packageName))
             return urbanObject.marshal(src);
-        else if (PublicTransitModule.v1_4.getModelPackageName().equals(packageName))
+        else if (PublicTransitModule.v1_5.getModelPackageName().equals(packageName))
             return publicTransit.marshal(src);
 
         return null;
