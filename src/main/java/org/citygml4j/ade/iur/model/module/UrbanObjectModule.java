@@ -33,12 +33,12 @@ import java.util.List;
 import java.util.Map;
 
 public class UrbanObjectModule extends ADEModule {
-    public static final UrbanObjectModule v1_4 = new UrbanObjectModule();
+    public static final UrbanObjectModule v1_5 = new UrbanObjectModule();
 
     private UrbanObjectModule() {
-        super("http://www.kantei.go.jp/jp/singi/tiiki/toshisaisei/itoshisaisei/iur/uro/1.4",
+        super("https://www.chisou.go.jp/tiiki/toshisaisei/itoshisaisei/iur/uro/1.5",
                 "uro",
-                "https://www.kantei.go.jp/jp/singi/tiiki/toshisaisei/itoshisaisei/iur/schemas/uro/1.4/urbanObject.xsd",
+                "https://www.chisou.go.jp/tiiki/toshisaisei/itoshisaisei/iur/schemas/uro/1.5/urbanObject.xsd",
                 CityGMLVersion.v2_0_0);
     }
     
@@ -49,7 +49,7 @@ public class UrbanObjectModule extends ADEModule {
 
     @Override
     public List<String> getJAXBPackageNames() {
-        return Collections.singletonList("jp.go.kantei.iur._1_4.uro");
+        return Collections.singletonList("jp.go.chisou.iur._1_5.uro");
     }
 
     public String getModelPackageName() {

@@ -22,14 +22,14 @@
 
 package org.citygml4j.ade.iur.bind.uro;
 
-import jp.go.kantei.iur._1_4.uro.BuildingDetailsPropertyType;
-import jp.go.kantei.iur._1_4.uro.BuildingDetailsType;
-import jp.go.kantei.iur._1_4.uro.KeyValuePairPropertyType;
-import jp.go.kantei.iur._1_4.uro.KeyValuePairType;
-import jp.go.kantei.iur._1_4.uro.LargeCustomerFacilitiesPropertyType;
-import jp.go.kantei.iur._1_4.uro.LargeCustomerFacilitiesType;
-import jp.go.kantei.iur._1_4.uro.TrafficVolumePropertyType;
-import jp.go.kantei.iur._1_4.uro.TrafficVolumeType;
+import jp.go.chisou.iur._1_5.uro.BuildingDetailsPropertyType;
+import jp.go.chisou.iur._1_5.uro.BuildingDetailsType;
+import jp.go.chisou.iur._1_5.uro.KeyValuePairPropertyType;
+import jp.go.chisou.iur._1_5.uro.KeyValuePairType;
+import jp.go.chisou.iur._1_5.uro.LargeCustomerFacilitiesPropertyType;
+import jp.go.chisou.iur._1_5.uro.LargeCustomerFacilitiesType;
+import jp.go.chisou.iur._1_5.uro.TrafficVolumePropertyType;
+import jp.go.chisou.iur._1_5.uro.TrafficVolumeType;
 import net.opengis.gml.CodeType;
 import net.opengis.gml.LengthType;
 import net.opengis.gml.MeasureType;

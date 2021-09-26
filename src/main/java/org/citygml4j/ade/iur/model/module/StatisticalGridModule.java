@@ -41,13 +41,13 @@ import java.util.List;
 import java.util.Map;
 
 public class StatisticalGridModule extends ADEModule {
-    public static final StatisticalGridModule v1_4 = new StatisticalGridModule();
+    public static final StatisticalGridModule v1_5 = new StatisticalGridModule();
     private final Map<String, Class<? extends AbstractFeature>> features;
 
     private StatisticalGridModule() {
-        super("http://www.kantei.go.jp/jp/singi/tiiki/toshisaisei/itoshisaisei/iur/urg/1.4",
+        super("https://www.chisou.go.jp/tiiki/toshisaisei/itoshisaisei/iur/urg/1.5",
                 "urg",
-                "https://www.kantei.go.jp/jp/singi/tiiki/toshisaisei/itoshisaisei/iur/schemas/urg/1.4/statisticalGrid.xsd",
+                "https://www.chisou.go.jp/tiiki/toshisaisei/itoshisaisei/iur/schemas/urg/1.5/statisticalGrid.xsd",
                 CityGMLVersion.v2_0_0);
 
         features = new HashMap<>();
@@ -67,7 +67,7 @@ public class StatisticalGridModule extends ADEModule {
 
     @Override
     public List<String> getJAXBPackageNames() {
-        return Collections.singletonList("jp.go.kantei.iur._1_4.urg");
+        return Collections.singletonList("jp.go.chisou.iur._1_5.urg");
     }
 
     public String getModelPackageName() {

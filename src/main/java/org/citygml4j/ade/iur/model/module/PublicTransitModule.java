@@ -49,14 +49,14 @@ import java.util.Map;
 import java.util.Set;
 
 public class PublicTransitModule extends ADEModule {
-    public static final PublicTransitModule v1_4 = new PublicTransitModule();
+    public static final PublicTransitModule v1_5 = new PublicTransitModule();
     private final Map<String, Class<? extends AbstractFeature>> features;
     private final Set<String> featureProperties;
 
     private PublicTransitModule() {
-        super("http://www.kantei.go.jp/jp/singi/tiiki/toshisaisei/itoshisaisei/iur/urt/1.4",
+        super("https://www.chisou.go.jp/tiiki/toshisaisei/itoshisaisei/iur/urt/1.5",
                 "urt",
-                "https://www.kantei.go.jp/jp/singi/tiiki/toshisaisei/itoshisaisei/iur/schemas/urt/1.4/publicTransit.xsd",
+                "https://www.chisou.go.jp/tiiki/toshisaisei/itoshisaisei/iur/schemas/urt/1.5/publicTransit.xsd",
                 CityGMLVersion.v2_0_0);
 
         features = new HashMap<>();
@@ -101,7 +101,7 @@ public class PublicTransitModule extends ADEModule {
 
     @Override
     public List<String> getJAXBPackageNames() {
-        return Collections.singletonList("jp.go.kantei.iur._1_4.urt");
+        return Collections.singletonList("jp.go.chisou.iur._1_5.urt");
     }
 
     public String getModelPackageName() {

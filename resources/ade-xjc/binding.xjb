@@ -4,7 +4,7 @@
   
   <jaxb:bindings schemaLocation="schemas/urbanObject.xsd" node="/xs:schema">
     <jaxb:schemaBindings>
-      <jaxb:package name="jp.go.kantei.iur._1_4.uro"/>
+      <jaxb:package name="jp.go.chisou.iur._1_5.uro"/>
     </jaxb:schemaBindings>
     <jaxb:bindings>
       <namespace:prefix name="uro"/>
@@ -22,7 +22,7 @@
   
   <jaxb:bindings schemaLocation="schemas/urbanFunction.xsd" node="/xs:schema">
     <jaxb:schemaBindings>
-      <jaxb:package name="jp.go.kantei.iur._1_4.urf"/>
+      <jaxb:package name="jp.go.chisou.iur._1_5.urf"/>
     </jaxb:schemaBindings>
     <jaxb:bindings>
       <namespace:prefix name="urf"/>
@@ -31,7 +31,7 @@
   
   <jaxb:bindings schemaLocation="schemas/statisticalGrid.xsd" node="/xs:schema">
     <jaxb:schemaBindings>
-      <jaxb:package name="jp.go.kantei.iur._1_4.urg"/>
+      <jaxb:package name="jp.go.chisou.iur._1_5.urg"/>
     </jaxb:schemaBindings>
     <jaxb:bindings>
       <namespace:prefix name="urg"/>
@@ -40,7 +40,7 @@
   
   <jaxb:bindings schemaLocation="schemas/publicTransit.xsd" node="/xs:schema">
     <jaxb:schemaBindings>
-      <jaxb:package name="jp.go.kantei.iur._1_4.urt"/>
+      <jaxb:package name="jp.go.chisou.iur._1_5.urt"/>
     </jaxb:schemaBindings>
     <jaxb:bindings>
       <namespace:prefix name="urt"/>

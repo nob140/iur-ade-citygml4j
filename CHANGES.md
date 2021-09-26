@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+### 1.5.0 - 2021-09-26
+
+##### Changes
+* Updated to version 1.5 of the i-UR ADE.
+
+
 ### 1.4.2 - 2021-09-25
 
 ##### Changes

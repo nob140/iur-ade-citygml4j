@@ -55,13 +55,13 @@ public class Unmarshaller implements ADEUnmarshaller {
     public ADEModelObject unmarshal(JAXBElement<?> src) throws MissingADESchemaException {
         String namespaceURI = src.getName().getNamespaceURI();
 
-        if (UrbanFunctionModule.v1_4.getNamespaceURI().equals(namespaceURI))
+        if (UrbanFunctionModule.v1_5.getNamespaceURI().equals(namespaceURI))
             return urbanFunction.unmarshal(src);
-        else if (StatisticalGridModule.v1_4.getNamespaceURI().equals(namespaceURI))
+        else if (StatisticalGridModule.v1_5.getNamespaceURI().equals(namespaceURI))
             return statisticalGrid.unmarshal(src);
-        else if (UrbanObjectModule.v1_4.getNamespaceURI().equals(namespaceURI))
+        else if (UrbanObjectModule.v1_5.getNamespaceURI().equals(namespaceURI))
             return urbanObject.unmarshal(src);
-        else if (PublicTransitModule.v1_4.getNamespaceURI().equals(namespaceURI))
+        else if (PublicTransitModule.v1_5.getNamespaceURI().equals(namespaceURI))
             return publicTransit.unmarshal(src);
 
         return null;
@@ -71,13 +71,13 @@ public class Unmarshaller implements ADEUnmarshaller {
     public ADEModelObject unmarshal(Object src) throws MissingADESchemaException {
         String packageName = src.getClass().getPackage().getName();
 
-        if (UrbanFunctionModule.v1_4.getModelPackageName().equals(packageName))
+        if (UrbanFunctionModule.v1_5.getModelPackageName().equals(packageName))
             return urbanFunction.unmarshal(src);
-        else if (StatisticalGridModule.v1_4.getModelPackageName().equals(packageName))
+        else if (StatisticalGridModule.v1_5.getModelPackageName().equals(packageName))
             return statisticalGrid.unmarshal(src);
-        else if (UrbanObjectModule.v1_4.getModelPackageName().equals(packageName))
+        else if (UrbanObjectModule.v1_5.getModelPackageName().equals(packageName))
             return urbanObject.unmarshal(src);
-        else if (PublicTransitModule.v1_4.getModelPackageName().equals(packageName))
+        else if (PublicTransitModule.v1_5.getModelPackageName().equals(packageName))
             return publicTransit.unmarshal(src);
 
         return null;
