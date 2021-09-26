@@ -51,13 +51,13 @@ import java.util.List;
 import java.util.Map;
 
 public class UrbanFunctionModule extends ADEModule {
-    public static final UrbanFunctionModule v1_4 = new UrbanFunctionModule();
+    public static final UrbanFunctionModule v1_5 = new UrbanFunctionModule();
     private final Map<String, Class<? extends AbstractFeature>> features;
 
     private UrbanFunctionModule() {
-        super("http://www.kantei.go.jp/jp/singi/tiiki/toshisaisei/itoshisaisei/iur/urf/1.4",
+        super("https://www.chisou.go.jp/tiiki/toshisaisei/itoshisaisei/iur/urf/1.5",
                 "urf",
-                "https://www.kantei.go.jp/jp/singi/tiiki/toshisaisei/itoshisaisei/iur/schemas/urf/1.4/urbanFunction.xsd",
+                "https://www.chisou.go.jp/tiiki/toshisaisei/itoshisaisei/iur/schemas/urf/1.5/urbanFunction.xsd",
                 CityGMLVersion.v2_0_0);
 
         features = new HashMap<>();
@@ -87,7 +87,7 @@ public class UrbanFunctionModule extends ADEModule {
 
     @Override
     public List<String> getJAXBPackageNames() {
-        return Collections.singletonList("jp.go.kantei.iur._1_4.urf");
+        return Collections.singletonList("jp.go.chisou.iur._1_5.urf");
     }
 
     public String getModelPackageName() {
